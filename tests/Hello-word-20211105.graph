@@ -7,8 +7,8 @@
         "filePath": "tests/Hello-word-20211105.graph",
         "sha": "",
         "git_url": "",
-        "eagleVersion": "",
-        "eagleCommitHash": "",
+        "eagleVersion": "Unknown",
+        "eagleCommitHash": "Unknown",
         "schemaVersion": "OJS",
         "readonly": true
     },
@@ -24,8 +24,8 @@
             "key": -1,
             "text": "Description",
             "description": "",
-            "x": 402.31505215131745,
-            "y": 217.19058259515992,
+            "x": 183.31505215131745,
+            "y": 540.1905825951599,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -34,7 +34,7 @@
             "streaming": false,
             "precious": false,
             "subject": null,
-            "expanded": false,
+            "expanded": true,
             "readonly": false,
             "inputPorts": [],
             "outputPorts": [],
@@ -65,8 +65,8 @@
             "key": -2,
             "text": "HelloWorldApp",
             "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
-            "x": 372.63011562787995,
-            "y": 385.38116487055055,
+            "x": 361.26024258100495,
+            "y": 385.7623294213318,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -154,12 +154,12 @@
             "key": -3,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 595.9451791044424,
-            "y": 390.5717471459411,
+            "x": 656.9451791044424,
+            "y": 384.5717471459411,
             "width": 200,
             "height": 72,
             "collapsed": false,
-            "showPorts": false,
+            "showPorts": true,
             "flipPorts": false,
             "streaming": false,
             "precious": false,
@@ -233,5 +233,13 @@
             "exitApplicationKey": null
         }
     ],
-    "linkDataArray": []
+    "linkDataArray": [
+        {
+            "from": -2,
+            "fromPort": "0cf1c8f9-f0c5-4008-8034-a79851df43fd",
+            "to": -3,
+            "toPort": "fa0ea0e5-7d5d-41b2-a8ba-534d9a9abfe1",
+            "loop_aware": "0"
+        }
+    ]
 }
