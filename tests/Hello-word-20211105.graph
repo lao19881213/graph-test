@@ -24,8 +24,8 @@
             "key": -2,
             "text": "HelloWorldApp",
             "description": "A simple APP that implements the standard Hello World in DALiuGE. It allows to change 'World' with some other string and it also permits to connect the single output port to multiple sinks, which will all receive the same message. App does not require any input.",
-            "x": 89.26024258100495,
-            "y": 384.7623294213318,
+            "x": 131.38484585248932,
+            "y": 271.7612307885193,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -113,8 +113,8 @@
             "key": -3,
             "text": "File",
             "description": "A standard file on a filesystem mounted to the deployment machine",
-            "x": 574.9451791044424,
-            "y": 389.5717471459411,
+            "x": 678.0698128935051,
+            "y": 381.5706485131286,
             "width": 200,
             "height": 72,
             "collapsed": false,
@@ -190,6 +190,95 @@
             "exitApplicationName": "",
             "exitApplicationType": "None",
             "exitApplicationKey": null
+        },
+        {
+            "category": "File",
+            "isData": true,
+            "isGroup": false,
+            "canHaveInputs": true,
+            "canHaveOutputs": true,
+            "color": "#394BB2",
+            "drawOrderHint": 0,
+            "key": -1,
+            "text": "File",
+            "description": "A standard file on a filesystem mounted to the deployment machine",
+            "x": 689.1246615263175,
+            "y": 208.99892085199582,
+            "width": 200,
+            "height": 72,
+            "collapsed": false,
+            "showPorts": true,
+            "flipPorts": false,
+            "streaming": false,
+            "precious": false,
+            "subject": null,
+            "expanded": false,
+            "readonly": false,
+            "inputPorts": [
+                {
+                    "Id": "7dffe050-a21b-42a2-85a0-35c72f718696",
+                    "IdText": "hello",
+                    "event": false,
+                    "type": "Unknown"
+                }
+            ],
+            "outputPorts": [],
+            "inputLocalPorts": [],
+            "outputLocalPorts": [],
+            "fields": [
+                {
+                    "text": "Data volume",
+                    "name": "data_volume",
+                    "value": 5,
+                    "description": "Estimated size of the data contained in this node",
+                    "readonly": false,
+                    "type": "Float"
+                },
+                {
+                    "text": "Group end",
+                    "name": "group_end",
+                    "value": false,
+                    "description": "Is this node the end of a group?",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "Check file path exists",
+                    "name": "check_filepath_exists",
+                    "value": true,
+                    "description": "Perform a check to make sure the file path exists before proceeding with the application",
+                    "readonly": false,
+                    "type": "Boolean"
+                },
+                {
+                    "text": "File path",
+                    "name": "filepath",
+                    "value": "",
+                    "description": "Path to the file for this node",
+                    "readonly": false,
+                    "type": "String"
+                },
+                {
+                    "text": "Directory name",
+                    "name": "dirname",
+                    "value": "",
+                    "description": "Name of the directory containing the file for this node",
+                    "readonly": false,
+                    "type": "String"
+                }
+            ],
+            "inputAppFields": [],
+            "outputAppFields": [],
+            "exitAppFields": [],
+            "inputApplicationName": "",
+            "inputApplicationType": "None",
+            "inputApplicationKey": null,
+            "outputApplicationName": "",
+            "outputApplicationType": "None",
+            "outputApplicationKey": null,
+            "exitApplicationName": "",
+            "exitApplicationType": "None",
+            "exitApplicationKey": null
         }
     ],
     "linkDataArray": [
@@ -198,6 +287,13 @@
             "fromPort": "0cf1c8f9-f0c5-4008-8034-a79851df43fd",
             "to": -3,
             "toPort": "fa0ea0e5-7d5d-41b2-a8ba-534d9a9abfe1",
+            "loop_aware": "0"
+        },
+        {
+            "from": -2,
+            "fromPort": "0cf1c8f9-f0c5-4008-8034-a79851df43fd",
+            "to": -1,
+            "toPort": "7dffe050-a21b-42a2-85a0-35c72f718696",
             "loop_aware": "0"
         }
     ]
